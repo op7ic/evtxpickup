@@ -1,9 +1,10 @@
 # Overview
-This is a simple PowerShell script which will attempt to download all EVTX files across windows enterprise network. You might need big disk storage be able to download all of them. 
+This is a simple PowerShell script which will attempt to download all EVTX files across windows enterprise network.
 
 # Running
 
 Run ```evtxpickup.ps1``` as domain administrator on domain connected system with output folder specified as argument. 
+**BEWARE** You might end up download terabytes of data. Make sure you have enough bandwidth and storage before running this script.
 
 # Help
 
