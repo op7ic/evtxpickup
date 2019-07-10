@@ -30,9 +30,9 @@ Options:
 function fancyPickup($serverListArray, $folder){
 
 foreach ($remoteServer in $serverListArray){
-	# control running jobs, max 4 
+	# control running jobs, max 8 
 	$running = @(Get-Job | Where-Object { $_.State -eq 'Running' })
-	if ($running.Count -ge 4) {
+	if ($running.Count -ge 8) {
 	    $running | Wait-Job -Any | Out-Null
     }
 	Write-Host "[+] Starting pickup for $remoteServer"
