@@ -22,6 +22,5 @@ Options:
 # Process
 The script will perform following actions:
 
-* Attempt to download Sysmon and Psexec from live.sysinternals.com
 * Enumerate LDAP structure of the current domain and identify any object matching 'computer' filter. This is done using "System.DirectoryServices.DirectorySearcher" method.
 * For each identified system, copy evtx files from default location onto specified folder
