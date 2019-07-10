@@ -20,11 +20,10 @@ param (
 
 function help(){
 Write-Host @"
-Usage: powershell -nop -exec bypass \.evtxpickup.ps1 -output E:\evidence\ [options]
+Usage: powershell -nop -exec bypass .\evtxpickup.ps1 -output E:\evidence\ [options]
 
 Options:
   -output   Location where to store evtx files (full path)
-  -help      Show this help menu
 "@
 }
 
