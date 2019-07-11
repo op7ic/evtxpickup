@@ -11,6 +11,8 @@ VERSION      DATE          AUTHOR
     This script collects all evtx files from systems across windows domain. Each file is then renamed to hostname-evtxname.evtx for ease of digestion
   .EXAMPLE
     evtxpickup.ps1 -output E:\evidence\
+  .PARAMETER output
+    Location where to store evtx files (full path)
 #>
 param (
     [Parameter(Mandatory=$true)][string]$output
